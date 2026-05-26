@@ -4,22 +4,40 @@
     "slug": "SportsConnectClient",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "web": {},
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/BeVietnamPro-Black.ttf",
+            "./assets/fonts/BeVietnamPro-BlackItalic.ttf",
+            "./assets/fonts/BeVietnamPro-Bold.ttf",
+            "./assets/fonts/BeVietnamPro-BoldItalic.ttf",
+            "./assets/fonts/BeVietnamPro-ExtraBold.ttf",
+            "./assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf",
+            "./assets/fonts/BeVietnamPro-ExtraLight.ttf",
+            "./assets/fonts/BeVietnamPro-ExtraLightItalic.ttf",
+            "./assets/fonts/BeVietnamPro-Italic.ttf",
+            "./assets/fonts/BeVietnamPro-Light.ttf",
+            "./assets/fonts/BeVietnamPro-LightItalic.ttf",
+            "./assets/fonts/BeVietnamPro-Medium.ttf",
+            "./assets/fonts/BeVietnamPro-MediumItalic.ttf",
+            "./assets/fonts/BeVietnamPro-Regular.ttf",
+            "./assets/fonts/BeVietnamPro-SemiBold.ttf",
+            "./assets/fonts/BeVietnamPro-SemiBoldItalic.ttf",
+            "./assets/fonts/BeVietnamPro-Thin.ttf",
+            "./assets/fonts/BeVietnamPro-ThinItalic.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }
