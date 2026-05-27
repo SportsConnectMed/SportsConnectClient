@@ -76,6 +76,7 @@ export function Input<T extends FieldValues>({
               rounded-2xl
               border
               px-4
+              ${props.multiline ? "py-4" : ""}
               ${error ? "border-destructive" : "border-border"}
               bg-secondary
             `}
@@ -89,15 +90,14 @@ export function Input<T extends FieldValues>({
               placeholder={placeholder}
               keyboardType={getKeyboardType()}
               autoCapitalize="none"
-              className="
-                h-14
+              className={`
                 flex-1
                 font-regular
                 text-foreground
-                border-border
                 placeholder:text-muted-foreground
-
-              "
+                ${props.multiline ? "min-h-[140px] py-4" : "h-14"}
+              `}
+              textAlignVertical={props.multiline ? "top" : "center"}
               {...props}
               secureTextEntry={isPasswordField ? !isPasswordVisible : false}
             />

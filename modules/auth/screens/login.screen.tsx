@@ -13,6 +13,7 @@ import { useLogin } from "../hooks/use-login";
 import Toast from "react-native-toast-message";
 import { useNavigation } from "@react-navigation/native";
 import { Navigation } from "@/app/navigation/types";
+import { LOGIN_DEFAULT_VALUES } from "../constants/login-default-values";
 
 export function LoginScreen() {
   const isDarkMode = useDarkMode();
@@ -22,10 +23,7 @@ export function LoginScreen() {
     formState: { isSubmitting },
   } = useForm<LoginType>({
     resolver: valibotResolver(LoginSchema),
-    defaultValues: {
-      email: "",
-      password: "",
-    },
+    defaultValues: LOGIN_DEFAULT_VALUES,
   });
 
   const { mutate } = useLogin();
